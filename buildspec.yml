@@ -5,12 +5,12 @@ phases:
       - "echo Build started on `date`"
       - "echo Building the Docker image..."
       - "docker build -t jindalrj/node-server ."
-      - "docker tag jindalrj/node-server jindalrj/node-server:latest"
+      - "docker tag jindalrj/node-server rockstarjindal/node-server:latest"
   post_build: 
     commands: 
       - "echo Build completed on `date`"
       - "echo Pushing the Docker image..."
-      - "docker push jindalrj/node-server:latest"
+      - "docker push rockstarjindal/node-server:latest"
   pre_build: 
     commands: 
       - "echo Logging in to Docker Hub..."
